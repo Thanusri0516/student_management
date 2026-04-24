@@ -1,0 +1,15 @@
+services:
+  backend:
+    build: ./demo
+    ports:
+      - "8083:8082"
+
+  frontend:
+    build: ./student-frontend
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./student-frontend:/app
+      - /app/node_modules
