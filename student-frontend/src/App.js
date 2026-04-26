@@ -77,7 +77,7 @@ function App() {
   const [isSaving, setIsSaving] = useState(false);
   const [isDeletingId, setIsDeletingId] = useState(null);
 
-  const API = "http://localhost:8082/students";
+  const API = "http://localhost:8086/students";
 
   const getApiErrorMessage = (error, fallbackMessage) => {
     const data = error.response?.data;
