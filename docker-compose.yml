@@ -2,7 +2,7 @@ services:
   backend:
     build: ./demo
     ports:
-      - "8083:8082"
+      - "8086:8082"
 
   frontend:
     build: ./student-frontend
